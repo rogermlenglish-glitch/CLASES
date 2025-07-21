@@ -2,45 +2,114 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Clases de Mateo</title>
+  <title>Horario de Clases - M1S</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 30px;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(#f0f4f8, #dbe9f4);
+      padding: 40px;
+      color: #222;
     }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 40px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
     }
+
     th, td {
-      border: 1px solid #0077cc;
-      padding: 10px;
+      padding: 15px;
       text-align: center;
     }
+
     th {
       background-color: #0077cc;
       color: white;
+      text-transform: uppercase;
+      font-size: 14px;
     }
-    h2 {
-      color: #0077cc;
+
+    tr:nth-child(even) {
+      background-color: #f2f8ff;
+    }
+
+    tr:hover {
+      background-color: #e0f0ff;
+    }
+
+    .footer-img {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .footer-img img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <h2>Información de Pago</h2>
+
+  <h1>Horario de Clases - Julio y Agosto 2025</h1>
+
   <table>
     <tr>
-      <th>Alumno</th>
-      <th>Fecha de Pago</th>
-      <th>Mes Pagado</th>
-      <th>Monto</th>
+      <th>Clase Nº</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th>Tema</th>
+      <th>Área</th>
       <th>Observaciones</th>
     </tr>
     <tr>
-      <td>Mateo</td>
+      <td>1</td>
       <td>domingo, 20 de Julio de 2025</td>
-      <td>1 mes</td>
-      <td>S/ 30.00</td>
+      <td>2–3:30 pm</td>
+      <td>División de Polinomios</td>
+      <td>Álgebra</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>domingo, 27 de Julio de 2025</td>
+      <td>2–3:30 pm</td>
+      <td>Multiplicación de números y propiedades</td>
+      <td>Aritmética</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>domingo, 3 de Agosto de 2025</td>
+      <td>2–3:30 pm</td>
+      <td>Triángulos rectángulos notables</td>
+      <td>Geometría</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>domingo, 10 de Agosto de 2025</td>
+      <td>2–3:30 pm</td>
+      <td>Propiedades de las razones trigonométricas</td>
+      <td>Trigonometría</td>
+      <td></td>
+    </tr>
+  </table>
+
+  <div class="footer-img">
+    <p><strong>¡Tú puedes con todo! 💪</strong></p>
+    <img src="https://i.pinimg.com/originals/61/5b/f2/615bf2c8ff10590fc93c383f75b16693.png" alt="Búho musculoso superhéroe">
+  </div>
+
+</body>
+</html>
+
