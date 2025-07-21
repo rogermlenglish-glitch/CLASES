@@ -52,9 +52,29 @@
     }
 
     .footer-img img {
-      width: 200px;
+      width: 250px;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
@@ -105,10 +125,15 @@
     </tr>
   </table>
 
-  <div class="footer-img">
-    <p><strong>¡Tú puedes con todo! 💪</strong></p>
-    <img src="https://i.pinimg.com/originals/61/5b/f2/615bf2c8ff10590fc93c383f75b16693.png" alt="Búho musculoso superhéroe">
-  </div>
+ <div class="footer-img">
+  <p><strong>¡Tú puedes con todo! 💪</strong></p>
+  <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true">
+</div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/51925484685" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 
 </body>
 </html>
