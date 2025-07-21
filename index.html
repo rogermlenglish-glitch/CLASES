@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horario de Clases - M1S</title>
+  <title>Clases M1S - Horario</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(#f0f4f8, #dbe9f4);
+      background: linear-gradient(#e0f7fa, #fce4ec);
       padding: 20px;
       margin: 0;
       color: #222;
@@ -16,8 +16,20 @@
     h1 {
       text-align: center;
       color: #003366;
-      margin-bottom: 30px;
-      font-size: 1.8em;
+      margin-bottom: 20px;
+      font-size: 1.6em;
+    }
+
+    .banner-gifs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .banner-gifs img {
+      height: 40px;
     }
 
     table {
@@ -27,12 +39,12 @@
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       overflow: hidden;
+      font-size: 14px;
     }
 
     th, td {
       padding: 12px;
       text-align: center;
-      font-size: 14px;
     }
 
     th {
@@ -42,7 +54,7 @@
     }
 
     tr:nth-child(even) {
-      background-color: #f2f8ff;
+      background-color: #f1f9ff;
     }
 
     tr:hover {
@@ -67,18 +79,19 @@
       margin-bottom: 15px;
     }
 
+    /* Botón WhatsApp flotante siempre visible */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      z-index: 100;
+      z-index: 999;
     }
 
     .whatsapp-float img {
-      width: 55px;
-      height: 55px;
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       transition: transform 0.2s;
     }
 
@@ -86,14 +99,17 @@
       transform: scale(1.1);
     }
 
-    /* RESPONSIVE */
     @media (max-width: 600px) {
-      table, th, td {
-        font-size: 12px;
+      h1 {
+        font-size: 1.3em;
       }
 
-      h1 {
-        font-size: 1.5em;
+      table {
+        font-size: 13px;
+      }
+
+      .banner-gifs img {
+        height: 35px;
       }
 
       .footer-img p {
@@ -101,8 +117,8 @@
       }
 
       .whatsapp-float img {
-        width: 48px;
-        height: 48px;
+        width: 65px;
+        height: 65px;
       }
     }
   </style>
@@ -111,6 +127,15 @@
 
   <h1>Horario de Clases - Julio y Agosto 2025</h1>
 
+  <!-- GIFS animados -->
+  <div class="banner-gifs">
+    <img src="https://media.tenor.com/RPqxw0D0klwAAAAi/study-time.gif" alt="Motivación">
+    <img src="https://media.tenor.com/lvDjsAWmX8YAAAAi/success-motivation.gif" alt="Mejora">
+    <img src="https://media.tenor.com/Cko-MF3P0CUAAAAi/go-for-it-motivation.gif" alt="Actitud">
+    <img src="https://media.tenor.com/8A9VVDrbkXYAAAAi/approved-lets-go.gif" alt="Vamos">
+  </div>
+
+  <!-- Tabla sin observaciones -->
   <table>
     <tr>
       <th>Clase Nº</th>
@@ -118,7 +143,6 @@
       <th>Hora</th>
       <th>Tema</th>
       <th>Área</th>
-      <th>Observaciones</th>
     </tr>
     <tr>
       <td>1</td>
@@ -126,7 +150,6 @@
       <td>2–3:30 pm</td>
       <td>División de Polinomios</td>
       <td>Álgebra</td>
-      <td></td>
     </tr>
     <tr>
       <td>2</td>
@@ -134,7 +157,6 @@
       <td>2–3:30 pm</td>
       <td>Multiplicación de números y propiedades</td>
       <td>Aritmética</td>
-      <td></td>
     </tr>
     <tr>
       <td>3</td>
@@ -142,7 +164,6 @@
       <td>2–3:30 pm</td>
       <td>Triángulos rectángulos notables</td>
       <td>Geometría</td>
-      <td></td>
     </tr>
     <tr>
       <td>4</td>
@@ -150,16 +171,16 @@
       <td>2–3:30 pm</td>
       <td>Propiedades de las razones trigonométricas</td>
       <td>Trigonometría</td>
-      <td></td>
     </tr>
   </table>
 
+  <!-- Imagen del búho -->
   <div class="footer-img">
     <p>¡Tú puedes con todo! 💪</p>
     <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true" alt="Búho musculoso">
   </div>
 
-  <!-- Botón flotante de WhatsApp -->
+  <!-- Botón flotante WhatsApp -->
   <a href="https://wa.me/51925484685" target="_blank" class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
