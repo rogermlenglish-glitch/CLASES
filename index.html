@@ -79,37 +79,42 @@
       margin-bottom: 15px;
     }
 
-    /* Botón WhatsApp flotante siempre visible */
+    /* Botón WhatsApp flotante */
     .whatsapp-float {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
+      bottom: 18px;
+      right: 18px;
+      z-index: 9999;
     }
 
     .whatsapp-float img {
-      width: 75px;
-      height: 75px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
       transition: transform 0.2s;
     }
 
     .whatsapp-float img:hover {
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
 
+    /* Móviles en formato vertical */
     @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
       h1 {
         font-size: 1.3em;
       }
 
       table {
-        font-size: 13px;
+        font-size: 12.5px;
       }
 
       .banner-gifs img {
-        height: 35px;
+        height: 32px;
       }
 
       .footer-img p {
@@ -117,8 +122,8 @@
       }
 
       .whatsapp-float img {
-        width: 65px;
-        height: 65px;
+        width: 80px;
+        height: 80px;
       }
     }
   </style>
@@ -135,7 +140,7 @@
     <img src="https://media.tenor.com/8A9VVDrbkXYAAAAi/approved-lets-go.gif" alt="Vamos">
   </div>
 
-  <!-- Tabla sin observaciones -->
+  <!-- Tabla de horarios -->
   <table>
     <tr>
       <th>Clase Nº</th>
@@ -174,7 +179,7 @@
     </tr>
   </table>
 
-  <!-- Imagen del búho -->
+  <!-- Imagen del búho musculoso -->
   <div class="footer-img">
     <p>¡Tú puedes con todo! 💪</p>
     <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true" alt="Búho musculoso">
@@ -187,5 +192,3 @@
 
 </body>
 </html>
-
-
