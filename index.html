@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nivel Pre-Universitario Nivel Búho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(#e0f7fa, #fce4ec);
       padding: 20px;
       margin: 0;
@@ -17,14 +18,38 @@
       text-align: center;
       color: #003366;
       margin-bottom: 10px;
-      font-size: 1.7em;
+      font-size: 1.8em;
     }
 
-    .sub-info {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.1em;
+    .info-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .info-buttons button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
       font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .info-buttons button:hover {
+      transform: scale(1.05);
+    }
+
+    .promo {
+      background-color: #ff5722;
+    }
+
+    .precio {
+      background-color: #4caf50;
     }
 
     .banner-gifs {
@@ -131,6 +156,7 @@
       bottom: 18px;
       right: 18px;
       z-index: 9999;
+      text-align: center;
     }
 
     .whatsapp-float img {
@@ -145,13 +171,20 @@
       transform: scale(1.15);
     }
 
+    .whatsapp-text {
+      font-weight: bold;
+      color: green;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
     @media (max-width: 600px) {
       body {
         padding: 10px;
       }
 
       h1 {
-        font-size: 1.3em;
+        font-size: 1.4em;
       }
 
       table {
@@ -170,14 +203,24 @@
         width: 80px;
         height: 80px;
       }
+
+      .whatsapp-text {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Nivel Pre-Universitario Nivel Buhito </h1>
-  <div class="sub-info">El costo por las 4 clases es de 30 soles al mes</div>
+  <h1>Nivel Pre-Universitario Nivel Buhito</h1>
 
+  <!-- Botones informativos -->
+  <div class="info-buttons">
+    <button class="promo">🔥 ¡Somos los mejores en matemáticas en enseñanza online! 🔥💯📚</button>
+    <button class="precio">😲 ¡4 clases por solo 30 soles al mes! 😲💸✨</button>
+  </div>
+
+  <!-- GIFS animados -->
   <div class="banner-gifs">
     <img src="https://media.tenor.com/RPqxw0D0klwAAAAi/study-time.gif" alt="Motivación">
     <img src="https://media.tenor.com/lvDjsAWmX8YAAAAi/success-motivation.gif" alt="Mejora">
@@ -185,6 +228,7 @@
     <img src="https://media.tenor.com/8A9VVDrbkXYAAAAi/approved-lets-go.gif" alt="Vamos">
   </div>
 
+  <!-- Tabla de clases -->
   <table>
     <tr>
       <th>Clase Nº</th>
@@ -228,17 +272,14 @@
 
   <!-- Videos insertados -->
   <div id="clases-grabadas" class="videos-container">
-
     <div class="video-embed">
-      <iframe src="https://drive.google.com/file/d/1H-03vVW2j0-yvhXFeLSI-33wlVZKvh1R/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1H-03vVW2j0-yvhXFeLSI-33wlVZKvh1R/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
-
     <div class="video-embed">
-      <iframe src="https://drive.google.com/file/d/1_FKM6B3nwFv9sffUbfAyGOtny3nKYS-p/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1_FKM6B3nwFv9sffUbfAyGOtny3nKYS-p/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
-
     <div class="video-embed">
-      <iframe src="https://drive.google.com/file/d/1ugqh9iiMtXzMTv8EtsyizwFZBg00JOfB/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1fv9RG95CuyHWsFn5n86YEoNnLGSlpTgO/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -249,9 +290,13 @@
   </div>
 
   <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/51925484685" target="_blank" class="whatsapp-float">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+  <div class="whatsapp-float">
+    <a href="https://wa.me/51925484685" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <div class="whatsapp-text">¡Inscríbete!</div>
+  </div>
 
 </body>
 </html>
+
