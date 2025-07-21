@@ -2,40 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horario de Clases - M1S</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(#f0f4f8, #dbe9f4);
-      padding: 40px;
+      padding: 20px;
+      margin: 0;
       color: #222;
     }
 
     h1 {
       text-align: center;
       color: #003366;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      font-size: 1.8em;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       background-color: #fff;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       overflow: hidden;
     }
 
     th, td {
-      padding: 15px;
+      padding: 12px;
       text-align: center;
+      font-size: 14px;
     }
 
     th {
       background-color: #0077cc;
       color: white;
       text-transform: uppercase;
-      font-size: 14px;
     }
 
     tr:nth-child(even) {
@@ -47,17 +50,23 @@
     }
 
     .footer-img {
-      margin-top: 50px;
+      margin-top: 40px;
       text-align: center;
     }
 
     .footer-img img {
-      width: 250px;
+      max-width: 90%;
+      height: auto;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
-    /* Botón flotante de WhatsApp */
+    .footer-img p {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -66,8 +75,8 @@
     }
 
     .whatsapp-float img {
-      width: 60px;
-      height: 60px;
+      width: 55px;
+      height: 55px;
       border-radius: 50%;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s;
@@ -75,6 +84,26 @@
 
     .whatsapp-float img:hover {
       transform: scale(1.1);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .footer-img p {
+        font-size: 1em;
+      }
+
+      .whatsapp-float img {
+        width: 48px;
+        height: 48px;
+      }
     }
   </style>
 </head>
@@ -125,10 +154,10 @@
     </tr>
   </table>
 
- <div class="footer-img">
-  <p><strong>¡Tú puedes con todo! 💪</strong></p>
-  <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true">
-</div>
+  <div class="footer-img">
+    <p>¡Tú puedes con todo! 💪</p>
+    <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true" alt="Búho musculoso">
+  </div>
 
   <!-- Botón flotante de WhatsApp -->
   <a href="https://wa.me/51925484685" target="_blank" class="whatsapp-float">
@@ -137,4 +166,5 @@
 
 </body>
 </html>
+
 
