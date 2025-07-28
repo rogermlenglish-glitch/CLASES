@@ -1,195 +1,235 @@
-diff --git a/index.html b/index.html
-index 645650aa060cc3b3df2ba9fd74f20987a8c9fe93..9a489c4fb3d0fabeeb7db86abd56d3b1850b445d 100644
---- a/index.html
-+++ b/index.html
-@@ -147,174 +147,147 @@
-     .profesor {
-       padding: 60px 20px;
-       background: #fff3e0;
-       text-align: center;
-     }
- 
-     .profesor h2 {
-       font-size: 2.5rem;
-       color: var(--color-secondary);
-     }
- 
-     .profesor img {
-       width: 200px;
-       border-radius: 15px;
-       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-       margin: 20px 0;
-     }
- 
-     .profesor p {
-       max-width: 800px;
-       margin: 0 auto;
-       font-size: 1.1rem;
-       color: #333;
-     }
- 
--    .contacto {
-+    .motivacion {
-       background: #eafaff;
-       padding: 60px 20px;
-       text-align: center;
-     }
- 
--    .contacto h2 {
-+    .motivacion h2 {
-       font-size: 2.2rem;
-       color: #1a1a40;
-       margin-bottom: 30px;
-     }
- 
--    .contacto form {
--      max-width: 600px;
--      margin: auto;
--      text-align: left;
--      background: var(--color-card);
--      padding: 30px;
--      border-radius: 15px;
--      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
--    }
--
--    .contacto input,
--    .contacto textarea {
--      width: 100%;
--      padding: 12px;
--      margin-bottom: 15px;
--      border-radius: 8px;
--      border: 1px solid #ccc;
--      font-family: 'Poppins', sans-serif;
-+    .motivacion p {
-+      font-size: 1.1rem;
-+      margin: 15px 0;
-+      color: #333;
-     }
- 
--    .contacto button {
--      background: var(--color-secondary);
--      color: #fff;
--      padding: 12px 25px;
--      border: none;
--      border-radius: 8px;
--      font-weight: bold;
--      cursor: pointer;
-+    .motivacion img {
-+      margin: 10px 0;
-     }
- 
-     .whatsapp-float {
-       position: fixed;
-       bottom: 20px;
-       right: 20px;
-       z-index: 1000;
-       text-align: center;
-     }
- 
-     .whatsapp-float img {
-       width: 85px;
-       height: 85px;
-       border-radius: 50%;
-       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-       transition: transform 0.3s;
-     }
- 
-     .whatsapp-float img:hover {
-       transform: scale(1.1);
-     }
- 
-     .whatsapp-text {
-       color: green;
-       font-size: 15px;
-       font-weight: bold;
-       margin-top: 5px;
-     }
- 
-     @media (max-width: 600px) {
-       .info-section {
-         flex-direction: column;
-         align-items: center;
-       }
- 
-       .youtube-section iframe {
-         height: 250px;
-       }
- 
--      .contacto form {
-+      .motivacion {
-         padding: 20px;
-       }
-     }
-   </style>
- </head>
- <body>
- 
-   <header>
-     <h1>Nivel Pre-Universitario Nivel Búho</h1>
-   </header>
- 
-   <div class="info-section">
-     <div class="info-card promo">🔥 Enseñanza de matemáticas online y presencial 🔥💯📚</div>
-     <div class="info-card precio">💸 ¡4 clases por solo 30 soles al mes! 💸</div>
-   </div>
- 
-   <table>
-     <tr><th>Clase</th><th>Fecha</th><th>Hora</th><th>Tema</th><th>Área</th></tr>
-     <tr><td>1</td><td>20 Jul 2025</td><td>2–3:30 pm</td><td>División de Polinomios</td><td>Álgebra</td></tr>
-     <tr><td>2</td><td>27 Jul 2025</td><td>2–3:30 pm</td><td>Multiplicación y Propiedades</td><td>Aritmética</td></tr>
-     <tr><td>3</td><td>3 Ago 2025</td><td>2–3:30 pm</td><td>Triángulos notables</td><td>Geometría</td></tr>
-     <tr><td>4</td><td>10 Ago 2025</td><td>2–3:30 pm</td><td>Razones trigonométricas</td><td>Trigonometría</td></tr>
-   </table>
- 
-   <section class="youtube-section">
-     <h2>🎥 Clases Gratuitas en YouTube</h2>
-     <iframe src="https://www.youtube.com/embed/videoseries?list=PLZtDAnd0SyTJi4aHm7FWjmNdY8lYklsss" allowfullscreen></iframe>
-   </section>
- 
-   <section class="profesor">
-     <h2>👨‍🏫 Conoce al Prof. Rogger Molina</h2>
-     <img src="https://drive.google.com/thumbnail?id=1wFlcjPlkRX2Y7_BZ76oPmlxukQxVfaFE" alt="Prof. Rogger Molina">
-     <p>
-       Soy el <strong>Prof. Rogger Molina</strong>, con más de <strong>10 años de experiencia</strong> enseñando matemáticas en academias presenciales y plataformas online.
-       Me especializo en <strong>Álgebra, Aritmética, Geometría, Trigonometría y Razonamiento Matemático</strong>.
-       ¡Mi objetivo es que aprendas con claridad, motivación y resultados!
-     </p>
-   </section>
- 
--  <section class="contacto">
--    <h2>✉️ Contáctanos / Inscríbete</h2>
--    <form action="https://formsubmit.co/matematicaasolmate@gmail.com" method="POST">
--      <label for="nombre">Nombre:</label><br>
--      <input type="text" id="nombre" name="nombre" required>
--      <label for="email">Correo Electrónico:</label><br>
--      <input type="email" id="email" name="email" required>
--      <label for="mensaje">Mensaje / Consulta:</label><br>
--      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
--      <input type="hidden" name="_next" value="https://gracias.comunidadm1s.com">
--      <input type="hidden" name="_template" value="table">
--      <input type="hidden" name="_captcha" value="false">
--      <button type="submit">Enviar</button>
--    </form>
-+  <section class="motivacion">
-+    <h2>🔢 Inspiración Matemática</h2>
-+    <p>"Las matemáticas son la música de la razón" &ndash; James Joseph Sylvester</p>
-+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="200"/>
-+    <p>"No hay problema que la mente matemática no pueda resolver"</p>
-+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Google Logo 2" width="180"/>
-+    <p>"La esencia de las matemáticas no es hacer las cosas simples complicadas, sino hacer las cosas complicadas simples" &ndash; S. Gudder</p>
-   </section>
- 
-   <div class="footer-img">
-     <p>¡Tú puedes con todo! 💪</p>
-     <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true" alt="Búho musculoso">
-   </div>
- 
-   <div class="whatsapp-float">
-     <a href="https://wa.me/51925484685" target="_blank">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-     </a>
-     <div class="whatsapp-text">¡Inscríbete!</div>
-   </div>
- 
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nivel Pre-Universitario Nivel Búho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(145deg, #e0f7fa, #fff3e0);
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+      background: #fefefe;
+      flex-wrap: wrap;
+    }
+
+    .info-card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      font-size: 17px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      width: 300px;
+      transition: all 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: scale(1.05);
+    }
+
+    .info-card.promo {
+      background: linear-gradient(135deg, #ff8a65, #ffccbc);
+      color: #fff;
+    }
+
+    .info-card.precio {
+      background: linear-gradient(135deg, #66bb6a, #b2fab4);
+      color: #fff;
+    }
+
+    table {
+      width: 90%;
+      margin: 50px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #003366;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f8ff;
+    }
+
+    tr:hover {
+      background-color: #e1f5fe;
+    }
+
+    .youtube-section {
+      padding: 50px 20px;
+      background: #e3f2fd;
+      text-align: center;
+    }
+
+    .youtube-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 25px;
+      color: #0d47a1;
+    }
+
+    .youtube-section iframe {
+      width: 90%;
+      max-width: 850px;
+      height: 480px;
+      border-radius: 16px;
+      border: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .footer-img {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffe0b2;
+    }
+
+    .footer-img p {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+
+    .footer-img img {
+      max-width: 340px;
+      border-radius: 18px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .whatsapp-float img {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-text {
+      color: green;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .info-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .youtube-section iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nivel Pre-Universitario Nivel Búho</h1>
+  </header>
+
+  <div class="info-section">
+    <div class="info-card promo">🔥 Enseñanza de matemáticas online y presencial 🔥💯📚</div>
+    <div class="info-card precio">💸 ¡4 clases por solo 30 soles al mes! 💸</div>
+  </div>
+
+  <table>
+    <tr><th>Clase</th><th>Fecha</th><th>Hora</th><th>Tema</th><th>Área</th></tr>
+    <tr><td>1</td><td>20 Jul 2025</td><td>2–3:30 pm</td><td>División de Polinomios</td><td>Álgebra</td></tr>
+    <tr><td>2</td><td>27 Jul 2025</td><td>2–3:30 pm</td><td>Multiplicación y Propiedades</td><td>Aritmética</td></tr>
+    <tr><td>3</td><td>3 Ago 2025</td><td>2–3:30 pm</td><td>Triángulos notables</td><td>Geometría</td></tr>
+    <tr><td>4</td><td>10 Ago 2025</td><td>2–3:30 pm</td><td>Razones trigonométricas</td><td>Trigonometría</td></tr>
+  </table>
+
+  <section class="youtube-section">
+    <h2>🎥 Clases Gratuitas en YouTube</h2>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLZtDAnd0SyTJi4aHm7FWjmNdY8lYklsss" allowfullscreen></iframe>
+  </section>
+
+  <section style="padding: 60px 20px; background: #fff3e0; text-align: center;">
+    <h2 style="font-size: 2.5rem; color: #003366;">👨‍🏫 Conoce al Prof. Rogger Molina</h2>
+    <img src="https://drive.google.com/uc?export=view&id=1wFlcjPlkRX2Y7_BZ76oPmlxukQxVfaFE" alt="Prof. Rogger Molina" style="width: 200px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin: 20px 0;">
+    <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #333;">
+      Soy el <strong>Prof. Rogger Molina</strong>, con más de <strong>10 años de experiencia</strong> enseñando matemáticas en colegios y plataformas online.
+      Me especializo en <strong>Álgebra, Aritmética, Geometría, Trigonometría y Razonamiento Matemático</strong>. 
+      ¡Mi objetivo es que aprendas con claridad, motivación y resultados!
+    </p>
+  </section>
+
+  <section class="contacto" style="background:#eafaff;padding:60px 20px;text-align:center">
+    <h2 style="font-size:2.2rem;color:#1a1a40;margin-bottom:30px">✉️ Contáctanos / Inscríbete</h2>
+    <form action="https://formsubmit.co/matematicaasolmate@gmail.com" method="POST" style="max-width:600px;margin:auto;text-align:left;background:#ffffff;padding:30px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.1)">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc">
+      <label for="email">Correo Electrónico:</label><br>
+      <input type="email" id="email" name="email" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc">
+      <label for="mensaje">Mensaje / Consulta:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc"></textarea>
+      <input type="hidden" name="_next" value="https://gracias.comunidadm1s.com">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit" style="background:#1a1a40;color:#fff;padding:12px 25px;border:none;border-radius:8px;font-weight:bold;cursor:pointer">Enviar</button>
+    </form>
+  </section>
+
+  <div class="footer-img">
+    <p>¡Tú puedes con todo! 💪</p>
+    <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true" alt="Búho musculoso">
+  </div>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/51925484685" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <div class="whatsapp-text">¡Inscríbete!</div>
+  </div>
+</body>
+</html>
