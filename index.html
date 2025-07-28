@@ -6,48 +6,60 @@
   <title>Nivel Pre-Universitario Nivel Búho</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
+    :root {
+      --color-primary: #1e88e5;
+      --color-secondary: #003366;
+      --color-light: #f5faff;
+      --color-card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(145deg, #e0f7fa, #fff3e0);
+      background: var(--color-light);
       margin: 0;
       padding: 0;
       color: #1a1a1a;
+      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, #0d47a1, #1976d2);
-      color: white;
-      padding: 30px 20px;
+      background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
       letter-spacing: 1px;
     }
 
     .info-section {
       display: flex;
       justify-content: center;
-      gap: 40px;
-      padding: 40px 20px;
+      gap: 30px;
+      padding: 40px 15px;
       background: #fefefe;
       flex-wrap: wrap;
     }
 
     .info-card {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      font-size: 17px;
-      font-weight: bold;
+      background: var(--color-card);
+      padding: 25px 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      font-weight: 600;
       color: #333;
       text-align: center;
-      width: 300px;
-      transition: all 0.3s ease;
+      width: 280px;
+      transition: transform 0.3s ease;
     }
 
     .info-card:hover {
@@ -65,59 +77,59 @@
     }
 
     table {
-      width: 90%;
+      width: 95%;
       margin: 50px auto;
       border-collapse: collapse;
-      background-color: #ffffff;
-      border-radius: 14px;
+      background-color: var(--color-card);
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      font-size: 1rem;
     }
 
     th, td {
-      padding: 16px;
+      padding: 15px;
       text-align: center;
     }
 
     th {
-      background-color: #003366;
-      color: white;
+      background-color: var(--color-secondary);
+      color: #fff;
     }
 
     tr:nth-child(even) {
-      background-color: #f1f8ff;
+      background-color: #f6faff;
     }
 
     tr:hover {
-      background-color: #e1f5fe;
+      background-color: #eef6ff;
     }
 
     .youtube-section {
-      padding: 50px 20px;
-      background: #e3f2fd;
+      padding: 60px 20px;
+      background: #eaf2fd;
       text-align: center;
     }
 
     .youtube-section h2 {
-      font-size: 1.8em;
+      font-size: 2rem;
       margin-bottom: 25px;
-      color: #0d47a1;
+      color: var(--color-secondary);
     }
 
     .youtube-section iframe {
-      width: 90%;
-      max-width: 850px;
+      width: 100%;
+      max-width: 860px;
       height: 480px;
-      border-radius: 16px;
+      border-radius: 12px;
       border: none;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
     .footer-img {
       text-align: center;
       padding: 40px 20px;
-      background-color: #ffe0b2;
+      background-color: #ffe8c4;
     }
 
     .footer-img p {
@@ -130,6 +142,73 @@
       max-width: 340px;
       border-radius: 18px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+
+    .profesor {
+      padding: 60px 20px;
+      background: #fff3e0;
+      text-align: center;
+    }
+
+    .profesor h2 {
+      font-size: 2.5rem;
+      color: var(--color-secondary);
+    }
+
+    .profesor img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    .profesor p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .contacto {
+      background: #eafaff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contacto h2 {
+      font-size: 2.2rem;
+      color: #1a1a40;
+      margin-bottom: 30px;
+    }
+
+    .contacto form {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+      background: var(--color-card);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .contacto input,
+    .contacto textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contacto button {
+      background: var(--color-secondary);
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .whatsapp-float {
@@ -168,6 +247,10 @@
       .youtube-section iframe {
         height: 250px;
       }
+
+      .contacto form {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -195,28 +278,29 @@
     <iframe src="https://www.youtube.com/embed/videoseries?list=PLZtDAnd0SyTJi4aHm7FWjmNdY8lYklsss" allowfullscreen></iframe>
   </section>
 
-  <section style="padding: 60px 20px; background: #fff3e0; text-align: center;">
-    <h2 style="font-size: 2.5rem; color: #003366;">👨‍🏫 Conoce al Prof. Rogger Molina</h2>
-    <img src="https://drive.google.com/thumbnail?id=1wFlcjPlkRX2Y7_BZ76oPmlxukQxVfaFE" alt="Prof. Rogger Molina" style="width: 200px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin: 20px 0;">
-    <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #333;">
+  <section class="profesor">
+    <h2>👨‍🏫 Conoce al Prof. Rogger Molina</h2>
+    <img src="https://drive.google.com/thumbnail?id=1wFlcjPlkRX2Y7_BZ76oPmlxukQxVfaFE" alt="Prof. Rogger Molina">
+    <p>
       Soy el <strong>Prof. Rogger Molina</strong>, con más de <strong>10 años de experiencia</strong> enseñando matemáticas en academias presenciales y plataformas online.
-      Me especializo en <strong>Álgebra, Aritmética, Geometría, Trigonometría y Razonamiento Matemático</strong>. 
+      Me especializo en <strong>Álgebra, Aritmética, Geometría, Trigonometría y Razonamiento Matemático</strong>.
       ¡Mi objetivo es que aprendas con claridad, motivación y resultados!
     </p>
   </section>
 
-  <section class="contacto" style="background:#eafaff;padding:60px 20px;text-align:center">
-    <h2 style="font-size:2.2rem;color:#1a1a40;margin-bottom:30px">✉️ Contáctanos / Inscríbete</h2>
-    <form action="https://formsubmit.co/matematicaasolmate@gmail.com" method="POST" style="max-width:600px;margin:auto;text-align:left;background:#ffffff;padding:30px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.1)">
+  <section class="contacto">
+    <h2>✉️ Contáctanos / Inscríbete</h2>
+    <form action="https://formsubmit.co/matematicaasolmate@gmail.com" method="POST">
       <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc">
+      <input type="text" id="nombre" name="nombre" required>
       <label for="email">Correo Electrónico:</label><br>
-      <input type="email" id="email" name="email" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc">
+      <input type="email" id="email" name="email" required>
       <label for="mensaje">Mensaje / Consulta:</label><br>
-      <textarea id="mensaje" name="mensaje" rows="4" required style="width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc"></textarea>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
       <input type="hidden" name="_next" value="https://gracias.comunidadm1s.com">
+      <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
-      <button type="submit" style="background:#1a1a40;color:#fff;padding:12px 25px;border:none;border-radius:8px;font-weight:bold;cursor:pointer">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
