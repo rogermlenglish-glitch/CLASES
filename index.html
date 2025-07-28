@@ -8,230 +8,177 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(#e0f7fa, #fce4ec);
-      padding: 20px;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
       margin: 0;
-      color: #222;
+      padding: 0;
+      color: #1a1a1a;
     }
 
-    h1 {
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      color: #003366;
-      margin-bottom: 10px;
-      font-size: 1.8em;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
 
-    .info-buttons {
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .info-section {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 25px;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px;
+      background: #f9f9f9;
+      flex-wrap: wrap;
     }
 
-    .info-buttons button {
-      padding: 12px 25px;
-      border: none;
-      border-radius: 30px;
+    .info-card {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
       font-size: 16px;
       font-weight: bold;
-      color: white;
-      cursor: pointer;
-      transition: transform 0.2s;
+      color: #333;
+      text-align: center;
+      max-width: 320px;
     }
 
-    .info-buttons button:hover {
-      transform: scale(1.05);
+    .info-card.promo {
+      background: linear-gradient(to right, #ff7043, #ffccbc);
+      color: #fff;
     }
 
-    .promo {
-      background-color: #ff5722;
-    }
-
-    .precio {
-      background-color: #4caf50;
-    }
-
-    .banner-gifs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-
-    .banner-gifs img {
-      height: 40px;
+    .info-card.precio {
+      background: linear-gradient(to right, #66bb6a, #c8e6c9);
+      color: #fff;
     }
 
     table {
-      width: 100%;
+      width: 90%;
+      margin: 40px auto;
       border-collapse: collapse;
       background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 12px;
       overflow: hidden;
-      font-size: 14px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      font-size: 15px;
     }
 
     th, td {
-      padding: 12px;
+      padding: 15px;
       text-align: center;
     }
 
     th {
-      background-color: #0077cc;
+      background-color: #003366;
       color: white;
       text-transform: uppercase;
     }
 
     tr:nth-child(even) {
-      background-color: #f1f9ff;
+      background-color: #f2f2f2;
     }
 
     tr:hover {
-      background-color: #e0f0ff;
+      background-color: #e3f2fd;
     }
 
-    .footer-img {
-      margin-top: 40px;
+    .youtube-section {
+      padding: 40px 20px;
+      background: #e3f2fd;
       text-align: center;
     }
 
-    .footer-img img {
-      max-width: 90%;
-      height: auto;
+    .youtube-section h2 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    .youtube-section iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
       border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .footer-img {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #fbe9e7;
     }
 
     .footer-img p {
       font-weight: bold;
-      font-size: 1.1em;
+      font-size: 1.2em;
       margin-bottom: 15px;
     }
 
-    .button-tiktok {
-      display: block;
-      width: fit-content;
-      margin: 30px auto;
-      padding: 12px 24px;
-      background-color: #ff4081;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
-    }
-
-    .button-tiktok:hover {
-      background-color: #e91e63;
-    }
-
-    .videos-container {
-      margin-top: 30px;
-    }
-
-    .video-embed {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      margin-bottom: 30px;
-    }
-
-    .video-embed iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
+    .footer-img img {
+      max-width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
     .whatsapp-float {
       position: fixed;
-      bottom: 18px;
-      right: 18px;
-      z-index: 9999;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
       text-align: center;
     }
 
     .whatsapp-float img {
-      width: 90px;
-      height: 90px;
+      width: 85px;
+      height: 85px;
       border-radius: 50%;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       transition: transform 0.2s;
     }
 
     .whatsapp-float img:hover {
-      transform: scale(1.15);
+      transform: scale(1.1);
     }
 
     .whatsapp-text {
-      font-weight: bold;
       color: green;
+      font-size: 15px;
+      font-weight: bold;
       margin-top: 5px;
-      font-size: 16px;
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 10px;
+      .info-section {
+        flex-direction: column;
+        align-items: center;
       }
 
-      h1 {
-        font-size: 1.4em;
-      }
-
-      table {
-        font-size: 12.5px;
-      }
-
-      .banner-gifs img {
-        height: 32px;
-      }
-
-      .footer-img p {
-        font-size: 1em;
-      }
-
-      .whatsapp-float img {
-        width: 80px;
-        height: 80px;
-      }
-
-      .whatsapp-text {
-        font-size: 14px;
+      .youtube-section iframe {
+        height: 250px;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Nivel Pre-Universitario Nivel Búho</h1>
+  </header>
 
-  <h1>Nivel Pre-Universitario Nivel Buhito</h1>
-
-  <!-- Botones informativos -->
-  <div class="info-buttons">
-    <button class="promo">🔥 ¡Somos los mejores en matemáticas en enseñanza online! 🔥💯📚</button>
-    <button class="precio">😲 ¡4 clases por solo 30 soles al mes! 😲💸✨</button>
+  <div class="info-section">
+    <div class="info-card promo">🔥 Somos los mejores en matemáticas en enseñanza online 🔥💯📚</div>
+    <div class="info-card precio">😲 4 clases por solo 30 soles al mes 😲💸✨</div>
   </div>
 
-  <!-- GIFS animados -->
-  <div class="banner-gifs">
-    <img src="https://media.tenor.com/RPqxw0D0klwAAAAi/study-time.gif" alt="Motivación">
-    <img src="https://media.tenor.com/lvDjsAWmX8YAAAAi/success-motivation.gif" alt="Mejora">
-    <img src="https://media.tenor.com/Cko-MF3P0CUAAAAi/go-for-it-motivation.gif" alt="Actitud">
-    <img src="https://media.tenor.com/8A9VVDrbkXYAAAAi/approved-lets-go.gif" alt="Vamos">
-  </div>
-
-  <!-- Tabla de clases -->
   <table>
     <tr>
-      <th>Clase Nº</th>
+      <th>Clase</th>
       <th>Fecha</th>
       <th>Hora</th>
       <th>Tema</th>
@@ -239,64 +186,51 @@
     </tr>
     <tr>
       <td>1</td>
-      <td>domingo, 20 de Julio de 2025</td>
+      <td>Domingo, 20 de Julio de 2025</td>
       <td>2–3:30 pm</td>
       <td>División de Polinomios</td>
       <td>Álgebra</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>domingo, 27 de Julio de 2025</td>
+      <td>Domingo, 27 de Julio de 2025</td>
       <td>2–3:30 pm</td>
       <td>Multiplicación de números y propiedades</td>
       <td>Aritmética</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>domingo, 3 de Agosto de 2025</td>
+      <td>Domingo, 3 de Agosto de 2025</td>
       <td>2–3:30 pm</td>
       <td>Triángulos rectángulos notables</td>
       <td>Geometría</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>domingo, 10 de Agosto de 2025</td>
+      <td>Domingo, 10 de Agosto de 2025</td>
       <td>2–3:30 pm</td>
       <td>Propiedades de las razones trigonométricas</td>
       <td>Trigonometría</td>
     </tr>
   </table>
 
-  <!-- Botón de clases grabadas -->
-  <a href="#clases-grabadas" class="button-tiktok">🎥 Acceder a clases grabadas gratuitas de TikTok</a>
+  <section class="youtube-section">
+    <h2>Clases Grabadas en YouTube</h2>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLZtDAnd0SyTJi4aHm7FWjmNdY8lYklsss" allowfullscreen></iframe>
+  </section>
 
-  <!-- Videos insertados -->
-  <div id="clases-grabadas" class="videos-container">
-    <div class="video-embed">
-      <iframe src="https://drive.google.com/file/d/1H-03vVW2j0-yvhXFeLSI-33wlVZKvh1R/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-    <div class="video-embed">
-      <iframe src="https://drive.google.com/file/d/1_FKM6B3nwFv9sffUbfAyGOtny3nKYS-p/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-    <div class="video-embed">
-      <iframe src="https://drive.google.com/file/d/1fv9RG95CuyHWsFn5n86YEoNnLGSlpTgO/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Imagen del búho musculoso -->
   <div class="footer-img">
     <p>¡Tú puedes con todo! 💪</p>
     <img src="https://github.com/rogermlenglish-glitch/CLASES/blob/main/b%C3%BAho.jpg?raw=true" alt="Búho musculoso">
   </div>
 
-  <!-- Botón flotante WhatsApp -->
   <div class="whatsapp-float">
     <a href="https://wa.me/51925484685" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
     <div class="whatsapp-text">¡Inscríbete!</div>
   </div>
-
 </body>
 </html>
+
 
